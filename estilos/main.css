@@ -7,10 +7,22 @@
     font-size: 1em;
 }
 
+/*
+cor primária: #f6c23e
+outra cor: #4e73df
+
+*/
+
+:root {
+    --cor-principal: (#F6C23E)
+    --cor-secundaria: (#3D6EF5)
+}
+
 html, body {
     background-color: rgb(150, 219, 196);
-    height: 100vh;
+    height: 100dvh;
     width: 100vw;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 main {
@@ -19,11 +31,25 @@ main {
     width: 100vw;
 }
 
+div#main-img {
+    display: block;
+    height: 200px;
+    background: red url(../images/menina.png);
+}
+
 section.login {
+    background-color: white;
     position: absolute;
     top: 50%;
     left: 50%;
+    width: 500px;
+    height: 400px;
+    padding: 10px;
+    border-radius: 4%;
     transform: translate(-50%, -50%);
-    background-color: white;
 }
+
+
+
+
 
