@@ -19,7 +19,8 @@ outra cor: #4e73df
 }
 
 html, body {
-    background-color: rgb(150, 219, 196);
+    background: #4e73df url(../images/bk-login.png) center no-repeat;
+    background-size: cover;
     height: 100dvh;
     width: 100vw;
     font-family: Arial, Helvetica, sans-serif;
@@ -31,10 +32,18 @@ main {
     width: 100vw;
 }
 
+div#main-img {
+    display: none;
+    background: url(../images/menina.png) center no-repeat;
+    background-size: cover;
+    height: 200px;
+}
+
 
 
 section.login {
-    background-color: white;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.351);
     position: absolute;
     top: 50%;
     left: 50%;
@@ -53,14 +62,17 @@ section.login > div.formulario > h1 {
 div.formulario > form {
     text-align: center;
     padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 div.campo {
-    display: block;
-    width: 100%;
+    width: 80%;
     border-radius: 5px;
     margin-bottom: 10px;
     background-color:#4e73df;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.436);
 }
 
 div.campo > span {
@@ -79,42 +91,40 @@ div.campo input {
     box-sizing: border-box;
 }
 
-div.buttons {
-    margin-top: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-div.buttons input {
+div.buttons input.enter {
     background-color: #4e73df;
     color: white;
-    width: 60%;
-    margin-bottom: 5px;
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 20px;
     border: none;
     border-radius: 10px;
-    font: bold 1.5em arial;
+    font: 1.5em arial;
+}
+
+div.buttons input.enter:hover {
+    background-color: #4566c8;
+    cursor: pointer;
 }
 
 div.buttons a {
     background-color: #f6c23e;
-    width: 60%;
-    height: 25px;
+    color: #4e73df;
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 5px;
+    border: none;
     border-radius: 10px;
-    margin-bottom: 10px;
+    font: bold 1.5em arial;
+    text-decoration: none;
 }
 
-
-
-
-/*width: 473px;
-
-div#main-img {
-    display: block;
-    height: 200px;
-    background: red url(../images/menina.png) no-repeat;
+div.buttons a:hover {
+    background-color: #f5c54c;
+    color: #5f7edb;
+    text-decoration: underline;
+    
 }
-    */
 
 
 
