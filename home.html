@@ -4,34 +4,89 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>integra ofertas</title>
-    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet">
+    <script src="https://kit.fontawesome.com/af97999266.js" crossorigin="anonymous"></script>
       <link rel="stylesheet" href="estilos/main.css" media="all">
       <link rel="stylesheet" href="estilos/responsividade.css">
 </head>
 <body>
+    <header>
+        <h1>Teste muito irado para algo de mercado</h1>
+    </header>
     <main>
-        <section class="login">
-            <div id="main-img"></div>
-            <div class="formulario">
-                <h1>Integra Ofertas</h1>
-                <form action="login.php" method="post">
-                    <div class="campo">
-                        <span class="material-icons">person</span>
-                        <input type="text" name="username" id="iuser"required placeholder="usuário" minlength="8" maxlength="24">
-                    </div>
-                    <div class="campo">
-                        <span class="material-icons">key</span>
-                        <input type="password" name="password" id=""ipass required placeholder="senha" minlength="8" maxlength="24">
+        <section class="valor">
+            <h2>Digite aqui o quanto você tem de dinheiro:</h2>
+            <input type="number" name="dinheiro" id="idin">
+        </section>
+
+
+        <details class="comp">
+            <summary>
+            produtos
+            </summary>
+            <ul>
+            </ul>
+        </details>
+
+
+        <section class="mercado">
+            <div class="title">
+                <h2>COMPRAS</h2>
+                <p class="money">Você tem exatos...</p>
+            </div>
+
+            <div class="produtos">
+                <div class="produto">
+                    <div class="info">
+                        <h3>Arroz</h3>
+                        <p class="custo">R$ 3.99</p>
                     </div>
                     <div class="buttons">
-                        <input type="submit" value="Entrar" class="enter">
-                        <a href="#" class="esqueci">suporte</a>
+                        <button type="button" class="rem">
+                            <p><i class="fa-solid fa-minus"></i></p>
+                        </button>
+
+                        <span class="quantidade">0</span>
+
+                        <button type="button" class="add">
+                            <i class="fa-solid fa-plus"></i>
+                        </button>
+
+                        <button type="button" class="addicionar">Adicionar a sacola</button>
                     </div>
-                </form>
+                </div>
+                <div class="produto">
+                    <div class="info">
+                        <h3>Arroz</h3>
+                        <p class="custo">R$ 3.99</p>
+                    </div>
+                    <div class="buttons">
+                        <button type="button" class="rem">
+                            <p><i class="fa-solid fa-minus"></i></p>
+                        </button>
+                        <button type="button" class="add">
+                            <i class="fa-solid fa-plus"></i>
+                        </button>
+                        <button type="button" class="addicionar">Adicionar a sacola</button>
+                    </div>
+                </div>
+                <div class="produto">
+                    <div class="info">
+                        <h3>Arroz</h3>
+                        <p class="custo">R$ 3.99</p>
+                    </div>
+                    <div class="buttons">
+                        <button type="button" class="rem">
+                            <p><i class="fa-solid fa-minus"></i></p>
+                        </button>
+                        <button type="button" class="add">
+                            <i class="fa-solid fa-plus"></i>
+                        </button>
+                        <button type="button" class="addicionar">Adicionar a sacola</button>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
+    <script src="js/main.js"></script>
 </body>
 </html>
