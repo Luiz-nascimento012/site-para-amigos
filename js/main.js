@@ -66,10 +66,7 @@ botoesAddlista.forEach((botao) => {
     console.log("Já existe!")
         } else {
             lista.innerHTML += `
-            <li class="item-sacola" data-produto="${nome}">
-            ${nome} : ${und} und
-        </li>
-    `
-}
+            <li class="item-sacola" data-produto="${nome}">${nome} : ${und} und</li>`
+        }
     })
 })
